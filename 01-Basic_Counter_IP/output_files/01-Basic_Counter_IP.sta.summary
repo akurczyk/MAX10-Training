@@ -1,0 +1,89 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.649
+TNS   : -40.139
+
+Type  : Slow 1200mV 85C Model Setup 'prescaler:inst1|lpm_counter:LPM_COUNTER_component|cntr_uji:auto_generated|counter_reg_bit[0]'
+Slack : -1.088
+TNS   : -3.325
+
+Type  : Slow 1200mV 85C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'prescaler:inst1|lpm_counter:LPM_COUNTER_component|cntr_uji:auto_generated|counter_reg_bit[0]'
+Slack : 0.472
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'prescaler:inst1|lpm_counter:LPM_COUNTER_component|cntr_uji:auto_generated|counter_reg_bit[0]'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk10MHz'
+Slack : 49.929
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 249999.729
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -3.207
+TNS   : -35.277
+
+Type  : Slow 1200mV 0C Model Setup 'prescaler:inst1|lpm_counter:LPM_COUNTER_component|cntr_uji:auto_generated|counter_reg_bit[0]'
+Slack : -0.889
+TNS   : -2.652
+
+Type  : Slow 1200mV 0C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.396
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'prescaler:inst1|lpm_counter:LPM_COUNTER_component|cntr_uji:auto_generated|counter_reg_bit[0]'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'prescaler:inst1|lpm_counter:LPM_COUNTER_component|cntr_uji:auto_generated|counter_reg_bit[0]'
+Slack : -1.487
+TNS   : -5.948
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk10MHz'
+Slack : 49.938
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 249999.735
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.149
+TNS   : -12.639
+
+Type  : Fast 1200mV 0C Model Setup 'prescaler:inst1|lpm_counter:LPM_COUNTER_component|cntr_uji:auto_generated|counter_reg_bit[0]'
+Slack : 0.230
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'prescaler:inst1|lpm_counter:LPM_COUNTER_component|cntr_uji:auto_generated|counter_reg_bit[0]'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'prescaler:inst1|lpm_counter:LPM_COUNTER_component|cntr_uji:auto_generated|counter_reg_bit[0]'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk10MHz'
+Slack : 49.649
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 249999.784
+TNS   : 0.000
+
+------------------------------------------------------------
