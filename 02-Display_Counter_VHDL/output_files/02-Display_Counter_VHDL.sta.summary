@@ -2,4 +2,124 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'Divider:inst_div|Tmp2'
+Slack : -2.289
+TNS   : -17.590
+
+Type  : Slow 1200mV 85C Model Setup 'Divider:inst_div|Tmp1'
+Slack : -1.830
+TNS   : -22.617
+
+Type  : Slow 1200mV 85C Model Setup 'inst_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inst_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.457
+TNS   : -0.914
+
+Type  : Slow 1200mV 85C Model Hold 'Divider:inst_div|Tmp2'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Divider:inst_div|Tmp1'
+Slack : 0.489
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Divider:inst_div|Tmp1'
+Slack : -1.487
+TNS   : -23.792
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Divider:inst_div|Tmp2'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Clk_10MHz'
+Slack : 49.929
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inst_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 24999.730
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Divider:inst_div|Tmp2'
+Slack : -2.151
+TNS   : -16.092
+
+Type  : Slow 1200mV 0C Model Setup 'Divider:inst_div|Tmp1'
+Slack : -1.547
+TNS   : -19.092
+
+Type  : Slow 1200mV 0C Model Setup 'inst_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inst_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.479
+TNS   : -0.958
+
+Type  : Slow 1200mV 0C Model Hold 'Divider:inst_div|Tmp2'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Divider:inst_div|Tmp1'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Divider:inst_div|Tmp1'
+Slack : -1.487
+TNS   : -23.792
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Divider:inst_div|Tmp2'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Clk_10MHz'
+Slack : 49.938
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inst_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 24999.736
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Divider:inst_div|Tmp2'
+Slack : -0.247
+TNS   : -1.456
+
+Type  : Fast 1200mV 0C Model Setup 'Divider:inst_div|Tmp1'
+Slack : -0.059
+TNS   : -0.131
+
+Type  : Fast 1200mV 0C Model Setup 'inst_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inst_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.259
+TNS   : -0.518
+
+Type  : Fast 1200mV 0C Model Hold 'Divider:inst_div|Tmp2'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Divider:inst_div|Tmp1'
+Slack : 0.176
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Divider:inst_div|Tmp1'
+Slack : -1.000
+TNS   : -16.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Divider:inst_div|Tmp2'
+Slack : -1.000
+TNS   : -13.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Clk_10MHz'
+Slack : 49.649
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inst_pll|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 24999.782
+TNS   : 0.000
+
 ------------------------------------------------------------

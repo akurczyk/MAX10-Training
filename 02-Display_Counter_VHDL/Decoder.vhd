@@ -12,7 +12,7 @@ architecture Dataflow of Decoder is
 begin
 
 	Output <= "11111100" when Input = "0000" else
-				 "11100000" when Input = "0001" else
+				 "01100000" when Input = "0001" else
 				 "11011010" when Input = "0010" else
 				 "11110010" when Input = "0011" else
 				 "01100110" when Input = "0100" else

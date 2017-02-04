@@ -11,9 +11,10 @@ entity Divider is
 end Divider;
 
 architecture Behavioral of Divider is
-	signal Cnt1 : UNSIGNED(10 downto 0);
-	signal Cnt2 : UNSIGNED(5 downto 0);
-	signal Tmp1, Tmp2 : STD_LOGIC;
+	signal Cnt1 : UNSIGNED(13 downto 0) := TO_UNSIGNED(0, 14);
+	signal Cnt2 : UNSIGNED(4 downto 0) := TO_UNSIGNED(0, 5);
+	signal Tmp1 : STD_LOGIC := '0';
+	signal Tmp2 : STD_LOGIC := '0';
 begin
 
 	Out1 <= Tmp1;
@@ -23,27 +24,17 @@ begin
 	begin
 		if rising_edge(Clk) then
 		
-			if Cnt1 < 1000 then
-				Tmp1 <= '0';
-			else
-				Tmp1 <= '1';
-			end if;
-			
-			if Cnt2 < 25 then
-				Tmp1 <= '0';
-			else
-				Tmp1 <= '1';
-			end if;
-			
 			Cnt1 <= Cnt1 + 1;
 			Cnt2 <= Cnt2 + 1;
 			
-			if Cnt1 = 2000 then
-				Cnt1 <= TO_UNSIGNED(0, 11);
+			if Cnt1 = 10000 then
+				Cnt1 <= TO_UNSIGNED(0, 14);
+				Tmp1 <= not Tmp1;
 			end if;
 			
-			if Cnt2 = 50 then
-				Cnt2 <= TO_UNSIGNED(0, 6);
+			if Cnt2 = 25 then
+				Cnt2 <= TO_UNSIGNED(0, 5);
+				Tmp2 <= not Tmp2;
 			end if;
 			
 		end if;

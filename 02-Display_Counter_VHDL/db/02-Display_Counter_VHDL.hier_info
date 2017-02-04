@@ -1,17 +1,17 @@
 |02-Display_Counter_VHDL
-D0 <= inst_n1.DB_MAX_OUTPUT_PORT_TYPE
+D0 <= A[0].DB_MAX_OUTPUT_PORT_TYPE
 Clk_10MHz => pll1:inst_pll.inclk0
-D1 <= inst_n2.DB_MAX_OUTPUT_PORT_TYPE
-D2 <= inst_n3.DB_MAX_OUTPUT_PORT_TYPE
-D3 <= inst_n4.DB_MAX_OUTPUT_PORT_TYPE
-D4 <= inst_n5.DB_MAX_OUTPUT_PORT_TYPE
-D5 <= inst_n6.DB_MAX_OUTPUT_PORT_TYPE
-D6 <= inst_n7.DB_MAX_OUTPUT_PORT_TYPE
-D7 <= inst_n8.DB_MAX_OUTPUT_PORT_TYPE
-K0 <= inst_n9.DB_MAX_OUTPUT_PORT_TYPE
-K1 <= inst_n10.DB_MAX_OUTPUT_PORT_TYPE
-K2 <= inst_n11.DB_MAX_OUTPUT_PORT_TYPE
-K3 <= inst_n12.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+D2 <= A[2].DB_MAX_OUTPUT_PORT_TYPE
+D3 <= A[3].DB_MAX_OUTPUT_PORT_TYPE
+D4 <= A[4].DB_MAX_OUTPUT_PORT_TYPE
+D5 <= A[5].DB_MAX_OUTPUT_PORT_TYPE
+D6 <= A[6].DB_MAX_OUTPUT_PORT_TYPE
+D7 <= A[7].DB_MAX_OUTPUT_PORT_TYPE
+K0 <= B[0].DB_MAX_OUTPUT_PORT_TYPE
+K1 <= B[1].DB_MAX_OUTPUT_PORT_TYPE
+K2 <= B[2].DB_MAX_OUTPUT_PORT_TYPE
+K3 <= B[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |02-Display_Counter_VHDL|Multiplexer:inst_mux
@@ -76,15 +76,29 @@ Sel[3] <= Sel[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |02-Display_Counter_VHDL|Divider:inst_div
+Clk => Tmp2.CLK
+Clk => Tmp1.CLK
 Clk => Cnt2[0].CLK
 Clk => Cnt2[1].CLK
 Clk => Cnt2[2].CLK
 Clk => Cnt2[3].CLK
 Clk => Cnt2[4].CLK
-Clk => Cnt2[5].CLK
-Clk => Tmp1.CLK
+Clk => Cnt1[0].CLK
+Clk => Cnt1[1].CLK
+Clk => Cnt1[2].CLK
+Clk => Cnt1[3].CLK
+Clk => Cnt1[4].CLK
+Clk => Cnt1[5].CLK
+Clk => Cnt1[6].CLK
+Clk => Cnt1[7].CLK
+Clk => Cnt1[8].CLK
+Clk => Cnt1[9].CLK
+Clk => Cnt1[10].CLK
+Clk => Cnt1[11].CLK
+Clk => Cnt1[12].CLK
+Clk => Cnt1[13].CLK
 Out1 <= Tmp1.DB_MAX_OUTPUT_PORT_TYPE
-Out2 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+Out2 <= Tmp2.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |02-Display_Counter_VHDL|pll1:inst_pll

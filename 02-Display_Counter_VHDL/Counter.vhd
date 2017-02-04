@@ -10,7 +10,7 @@ entity Counter is
 end Counter;
 
 architecture Behavioral of Counter is
-	signal CntValue : UNSIGNED(15 downto 0);
+	signal CntValue : UNSIGNED(15 downto 0) := TO_UNSIGNED(0, 16);
 begin
 
 	Output <= STD_LOGIC_VECTOR(CntValue);

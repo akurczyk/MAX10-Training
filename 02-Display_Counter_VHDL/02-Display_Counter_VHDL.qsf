@@ -65,8 +65,9 @@ set_location_assignment PIN_H15 -to D4
 set_location_assignment PIN_J16 -to D5
 set_location_assignment PIN_J15 -to D6
 set_location_assignment PIN_L16 -to D7
-set_location_assignment PIN_D16 -to K0
-set_location_assignment PIN_D15 -to K1
-set_location_assignment PIN_E16 -to K2
-set_location_assignment PIN_E15 -to K3
+set_location_assignment PIN_E15 -to K0
+set_location_assignment PIN_E16 -to K1
+set_location_assignment PIN_D15 -to K2
+set_location_assignment PIN_D16 -to K3
+set_location_assignment PIN_C15 -to WS2812B
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
