@@ -1,5 +1,5 @@
 Flow report for 02-Display_Counter_VHDL
-Sat Feb 04 21:30:02 2017
+Sat Apr 29 18:30:34 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Feb 04 21:29:57 2017       ;
+; Flow Status                        ; Successful - Sat Apr 29 18:30:29 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; 02-Display_Counter_VHDL                     ;
 ; Top-level Entity Name              ; 02-Display_Counter_VHDL                     ;
@@ -67,7 +67,7 @@ agreement for further details.
 +-------------------+-------------------------+
 ; Option            ; Setting                 ;
 +-------------------+-------------------------+
-; Start date & time ; 02/04/2017 21:29:21     ;
+; Start date & time ; 04/29/2017 18:29:56     ;
 ; Main task         ; Compilation             ;
 ; Revision Name     ; 02-Display_Counter_VHDL ;
 +-------------------+-------------------------+
@@ -78,7 +78,7 @@ agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 739770538836.148624016107324           ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 88491853464190.149348339502696         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                           ; pll1.bsf                               ; --            ; --          ; --         ;
@@ -96,10 +96,10 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:18     ; 1.0                     ; 688 MB              ; 00:00:36                           ;
-; Fitter                    ; 00:00:11     ; 1.1                     ; 1435 MB             ; 00:00:10                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 562 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.1                     ; 668 MB              ; 00:00:03                           ;
+; Analysis & Synthesis      ; 00:00:20     ; 1.0                     ; 684 MB              ; 00:00:39                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 1170 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:02     ; 1.0                     ; 560 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 647 MB              ; 00:00:03                           ;
 ; Total                     ; 00:00:35     ; --                      ; --                  ; 00:00:51                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
@@ -109,10 +109,10 @@ agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; OLO-PC           ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; OLO-PC           ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; OLO-PC           ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; OLO-PC           ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; OLO-THINKPAD     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; OLO-THINKPAD     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; OLO-THINKPAD     ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; OLO-THINKPAD     ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for 02-Display_Counter_VHDL
-Sat Feb 04 21:30:02 2017
+Sat Apr 29 18:30:34 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -88,16 +88,14 @@ agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
-; Average used               ; 1.06        ;
-; Maximum used               ; 4           ;
+; Average used               ; 1.03        ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.9%      ;
-;     Processor 3            ;   1.8%      ;
-;     Processor 4            ;   1.8%      ;
+;     Processor 2            ;   2.6%      ;
 +----------------------------+-------------+
 
 
@@ -118,9 +116,9 @@ agreement for further details.
 +------------+-----------------+------------------------------------------------------+------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                           ; Note                                           ;
 +------------+-----------------+------------------------------------------------------+------------------------------------------------+
-; 237.87 MHz ; 237.87 MHz      ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ;                                                ;
+; 225.43 MHz ; 225.43 MHz      ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ;                                                ;
 ; 353.36 MHz ; 353.36 MHz      ; Divider:inst_div|Tmp1                                ;                                                ;
-; 505.05 MHz ; 402.09 MHz      ; Divider:inst_div|Tmp2                                ; limit due to minimum period restriction (tmin) ;
+; 533.62 MHz ; 402.09 MHz      ; Divider:inst_div|Tmp2                                ; limit due to minimum period restriction (tmin) ;
 +------------+-----------------+------------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -130,8 +128,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------+--------+---------------+
 ; Clock                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------+--------+---------------+
-; Divider:inst_div|Tmp2                                ; -2.289 ; -17.590       ;
-; Divider:inst_div|Tmp1                                ; -1.830 ; -22.617       ;
+; Divider:inst_div|Tmp2                                ; -2.258 ; -17.470       ;
+; Divider:inst_div|Tmp1                                ; -1.830 ; -22.295       ;
 ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ; 0.053  ; 0.000         ;
 +------------------------------------------------------+--------+---------------+
 
@@ -143,7 +141,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------+--------+---------------+
 ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ; -0.457 ; -0.914        ;
 ; Divider:inst_div|Tmp2                                ; 0.360  ; 0.000         ;
-; Divider:inst_div|Tmp1                                ; 0.489  ; 0.000         ;
+; Divider:inst_div|Tmp1                                ; 0.470  ; 0.000         ;
 +------------------------------------------------------+--------+---------------+
 
 
@@ -182,9 +180,9 @@ No synchronizer chains to report.
 +------------+-----------------+------------------------------------------------------+------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                           ; Note                                           ;
 +------------+-----------------+------------------------------------------------------+------------------------------------------------+
-; 255.04 MHz ; 255.04 MHz      ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ;                                                ;
-; 392.62 MHz ; 392.62 MHz      ; Divider:inst_div|Tmp1                                ;                                                ;
-; 551.88 MHz ; 402.09 MHz      ; Divider:inst_div|Tmp2                                ; limit due to minimum period restriction (tmin) ;
+; 240.73 MHz ; 240.73 MHz      ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ;                                                ;
+; 392.31 MHz ; 392.31 MHz      ; Divider:inst_div|Tmp1                                ;                                                ;
+; 586.17 MHz ; 402.09 MHz      ; Divider:inst_div|Tmp2                                ; limit due to minimum period restriction (tmin) ;
 +------------+-----------------+------------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -194,8 +192,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------+--------+---------------+
 ; Clock                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------+--------+---------------+
-; Divider:inst_div|Tmp2                                ; -2.151 ; -16.092       ;
-; Divider:inst_div|Tmp1                                ; -1.547 ; -19.092       ;
+; Divider:inst_div|Tmp2                                ; -2.099 ; -15.858       ;
+; Divider:inst_div|Tmp1                                ; -1.549 ; -18.794       ;
 ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ; 0.158  ; 0.000         ;
 +------------------------------------------------------+--------+---------------+
 
@@ -207,7 +205,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +------------------------------------------------------+--------+---------------+
 ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ; -0.479 ; -0.958        ;
 ; Divider:inst_div|Tmp2                                ; 0.323  ; 0.000         ;
-; Divider:inst_div|Tmp1                                ; 0.460  ; 0.000         ;
+; Divider:inst_div|Tmp1                                ; 0.445  ; 0.000         ;
 +------------------------------------------------------+--------+---------------+
 
 
@@ -246,8 +244,8 @@ No synchronizer chains to report.
 +------------------------------------------------------+--------+---------------+
 ; Clock                                                ; Slack  ; End Point TNS ;
 +------------------------------------------------------+--------+---------------+
-; Divider:inst_div|Tmp2                                ; -0.247 ; -1.456        ;
-; Divider:inst_div|Tmp1                                ; -0.059 ; -0.131        ;
+; Divider:inst_div|Tmp2                                ; -0.264 ; -1.499        ;
+; Divider:inst_div|Tmp1                                ; -0.059 ; -0.121        ;
 ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ; 0.231  ; 0.000         ;
 +------------------------------------------------------+--------+---------------+
 
@@ -259,7 +257,7 @@ No synchronizer chains to report.
 +------------------------------------------------------+--------+---------------+
 ; inst_pll|altpll_component|auto_generated|pll1|clk[0] ; -0.259 ; -0.518        ;
 ; Divider:inst_div|Tmp2                                ; 0.151  ; 0.000         ;
-; Divider:inst_div|Tmp1                                ; 0.176  ; 0.000         ;
+; Divider:inst_div|Tmp1                                ; 0.168  ; 0.000         ;
 +------------------------------------------------------+--------+---------------+
 
 
@@ -298,15 +296,15 @@ No synchronizer chains to report.
 +-------------------------------------------------------+---------+--------+----------+---------+---------------------+
 ; Clock                                                 ; Setup   ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +-------------------------------------------------------+---------+--------+----------+---------+---------------------+
-; Worst-case Slack                                      ; -2.289  ; -0.479 ; N/A      ; N/A     ; -1.487              ;
+; Worst-case Slack                                      ; -2.258  ; -0.479 ; N/A      ; N/A     ; -1.487              ;
 ;  Clk_10MHz                                            ; N/A     ; N/A    ; N/A      ; N/A     ; 49.649              ;
-;  Divider:inst_div|Tmp1                                ; -1.830  ; 0.176  ; N/A      ; N/A     ; -1.487              ;
-;  Divider:inst_div|Tmp2                                ; -2.289  ; 0.151  ; N/A      ; N/A     ; -1.487              ;
+;  Divider:inst_div|Tmp1                                ; -1.830  ; 0.168  ; N/A      ; N/A     ; -1.487              ;
+;  Divider:inst_div|Tmp2                                ; -2.258  ; 0.151  ; N/A      ; N/A     ; -1.487              ;
 ;  inst_pll|altpll_component|auto_generated|pll1|clk[0] ; 0.053   ; -0.479 ; N/A      ; N/A     ; 24999.730           ;
-; Design-wide TNS                                       ; -40.207 ; -0.958 ; 0.0      ; 0.0     ; -43.123             ;
+; Design-wide TNS                                       ; -39.765 ; -0.958 ; 0.0      ; 0.0     ; -43.123             ;
 ;  Clk_10MHz                                            ; N/A     ; N/A    ; N/A      ; N/A     ; 0.000               ;
-;  Divider:inst_div|Tmp1                                ; -22.617 ; 0.000  ; N/A      ; N/A     ; -23.792             ;
-;  Divider:inst_div|Tmp2                                ; -17.590 ; 0.000  ; N/A      ; N/A     ; -19.331             ;
+;  Divider:inst_div|Tmp1                                ; -22.295 ; 0.000  ; N/A      ; N/A     ; -23.792             ;
+;  Divider:inst_div|Tmp2                                ; -17.470 ; 0.000  ; N/A      ; N/A     ; -19.331             ;
 ;  inst_pll|altpll_component|auto_generated|pll1|clk[0] ; 0.000   ; -0.958 ; N/A      ; N/A     ; 0.000               ;
 +-------------------------------------------------------+---------+--------+----------+---------+---------------------+
 
@@ -523,11 +521,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sat Feb 04 21:29:58 2017
+    Info: Processing started: Sat Apr 29 18:30:30 2017
 Info: Command: quartus_sta 02-Display_Counter_VHDL -c 02-Display_Counter_VHDL
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
 Critical Warning (332012): Synopsys Design Constraints File file not found: '02-Display_Counter_VHDL.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
@@ -545,18 +543,18 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.289
+Info (332146): Worst-case setup slack is -2.258
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.289             -17.590 Divider:inst_div|Tmp2 
-    Info (332119):    -1.830             -22.617 Divider:inst_div|Tmp1 
+    Info (332119):    -2.258             -17.470 Divider:inst_div|Tmp2 
+    Info (332119):    -1.830             -22.295 Divider:inst_div|Tmp1 
     Info (332119):     0.053               0.000 inst_pll|altpll_component|auto_generated|pll1|clk[0] 
 Info (332146): Worst-case hold slack is -0.457
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -0.457              -0.914 inst_pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):     0.360               0.000 Divider:inst_div|Tmp2 
-    Info (332119):     0.489               0.000 Divider:inst_div|Tmp1 
+    Info (332119):     0.470               0.000 Divider:inst_div|Tmp1 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.487
@@ -572,18 +570,18 @@ Warning (334000): Timing characteristics of device 10M08DAF256C8GES are prelimin
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -2.151
+Info (332146): Worst-case setup slack is -2.099
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.151             -16.092 Divider:inst_div|Tmp2 
-    Info (332119):    -1.547             -19.092 Divider:inst_div|Tmp1 
+    Info (332119):    -2.099             -15.858 Divider:inst_div|Tmp2 
+    Info (332119):    -1.549             -18.794 Divider:inst_div|Tmp1 
     Info (332119):     0.158               0.000 inst_pll|altpll_component|auto_generated|pll1|clk[0] 
 Info (332146): Worst-case hold slack is -0.479
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -0.479              -0.958 inst_pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):     0.323               0.000 Divider:inst_div|Tmp2 
-    Info (332119):     0.460               0.000 Divider:inst_div|Tmp1 
+    Info (332119):     0.445               0.000 Divider:inst_div|Tmp1 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.487
@@ -596,18 +594,18 @@ Info (332146): Worst-case minimum pulse width slack is -1.487
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -0.247
+Info (332146): Worst-case setup slack is -0.264
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.247              -1.456 Divider:inst_div|Tmp2 
-    Info (332119):    -0.059              -0.131 Divider:inst_div|Tmp1 
+    Info (332119):    -0.264              -1.499 Divider:inst_div|Tmp2 
+    Info (332119):    -0.059              -0.121 Divider:inst_div|Tmp1 
     Info (332119):     0.231               0.000 inst_pll|altpll_component|auto_generated|pll1|clk[0] 
 Info (332146): Worst-case hold slack is -0.259
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -0.259              -0.518 inst_pll|altpll_component|auto_generated|pll1|clk[0] 
     Info (332119):     0.151               0.000 Divider:inst_div|Tmp2 
-    Info (332119):     0.176               0.000 Divider:inst_div|Tmp1 
+    Info (332119):     0.168               0.000 Divider:inst_div|Tmp1 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -1.000
@@ -620,8 +618,8 @@ Info (332146): Worst-case minimum pulse width slack is -1.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 668 megabytes
-    Info: Processing ended: Sat Feb 04 21:30:02 2017
+    Info: Peak virtual memory: 647 megabytes
+    Info: Processing ended: Sat Apr 29 18:30:34 2017
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 

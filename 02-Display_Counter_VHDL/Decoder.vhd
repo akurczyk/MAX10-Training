@@ -23,7 +23,7 @@ begin
 				 "11110110" when Input = "1001" else
 				 "11101110" when Input = "1010" else
 				 "00111110" when Input = "1011" else
-				 "00011010" when Input = "1100" else
+				 "10011100" when Input = "1100" else
 				 "01111010" when Input = "1101" else
 				 "10011110" when Input = "1110" else
 				 "10001110";

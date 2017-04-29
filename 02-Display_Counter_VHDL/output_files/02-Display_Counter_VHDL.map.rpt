@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 02-Display_Counter_VHDL
-Sat Feb 04 21:29:39 2017
+Sat Apr 29 18:30:15 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Feb 04 21:29:39 2017       ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 29 18:30:15 2017       ;
 ; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                      ; 02-Display_Counter_VHDL                     ;
 ; Top-level Entity Name              ; 02-Display_Counter_VHDL                     ;
@@ -158,15 +158,14 @@ agreement for further details.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -710,10 +709,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Sat Feb 04 21:29:20 2017
+    Info: Processing started: Sat Apr 29 18:29:55 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 02-Display_Counter_VHDL -c 02-Display_Counter_VHDL
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file pll1.vhd
     Info (12022): Found design unit 1: pll1-SYN File: C:/Users/olo/Desktop/MAX10-Training/02-Display_Counter_VHDL/pll1.vhd Line: 52
     Info (12023): Found entity 1: pll1 File: C:/Users/olo/Desktop/MAX10-Training/02-Display_Counter_VHDL/pll1.vhd Line: 43
@@ -808,9 +807,9 @@ Info (21057): Implemented 116 device resources after synthesis - the final resou
     Info (21061): Implemented 102 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 688 megabytes
-    Info: Processing ended: Sat Feb 04 21:29:39 2017
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Peak virtual memory: 684 megabytes
+    Info: Processing ended: Sat Apr 29 18:30:15 2017
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:39
 
 
