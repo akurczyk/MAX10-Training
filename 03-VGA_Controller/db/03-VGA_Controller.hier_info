@@ -1,0 +1,118 @@
+|03-VGA_Controller
+VgaH <= VGA_Controller:inst.VgaH
+CLK => PLL:inst1.inclk0
+VgaV <= VGA_Controller:inst.VgaV
+VgaR <= VGA_Controller:inst.VgaR
+VgaG <= VGA_Controller:inst.VgaG
+VgaB <= VGA_Controller:inst.VgaB
+
+
+|03-VGA_Controller|VGA_Controller:inst
+Clk => VgaB~reg0.CLK
+Clk => VgaG~reg0.CLK
+Clk => VgaR~reg0.CLK
+Clk => VgaV~reg0.CLK
+Clk => VgaH~reg0.CLK
+Clk => PosV[0].CLK
+Clk => PosV[1].CLK
+Clk => PosV[2].CLK
+Clk => PosV[3].CLK
+Clk => PosV[4].CLK
+Clk => PosV[5].CLK
+Clk => PosV[6].CLK
+Clk => PosV[7].CLK
+Clk => PosV[8].CLK
+Clk => PosV[9].CLK
+Clk => PosH[0].CLK
+Clk => PosH[1].CLK
+Clk => PosH[2].CLK
+Clk => PosH[3].CLK
+Clk => PosH[4].CLK
+Clk => PosH[5].CLK
+Clk => PosH[6].CLK
+Clk => PosH[7].CLK
+Clk => PosH[8].CLK
+Clk => PosH[9].CLK
+Clk => PosH[10].CLK
+VgaH <= VgaH~reg0.DB_MAX_OUTPUT_PORT_TYPE
+VgaV <= VgaV~reg0.DB_MAX_OUTPUT_PORT_TYPE
+VgaR <= VgaR~reg0.DB_MAX_OUTPUT_PORT_TYPE
+VgaG <= VgaG~reg0.DB_MAX_OUTPUT_PORT_TYPE
+VgaB <= VgaB~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|03-VGA_Controller|PLL:inst1
+inclk0 => altpll:altpll_component.inclk[0]
+c0 <= altpll:altpll_component.clk[0]
+
+
+|03-VGA_Controller|PLL:inst1|altpll:altpll_component
+inclk[0] => PLL_altpll:auto_generated.inclk[0]
+inclk[1] => PLL_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= <GND>
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|03-VGA_Controller|PLL:inst1|altpll:altpll_component|PLL_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+
+
