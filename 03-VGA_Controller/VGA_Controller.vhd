@@ -24,44 +24,47 @@ begin
 	begin
 		if rising_edge(Clk) then
 
-			if PosH < 40+128+88+800-1 then
+			if PosH < 56+120+64+800-1 then
 				PosH <= PosH+1;
 			else
 				PosH <= TO_UNSIGNED(0, 11);
-				if PosV < 1+4+23+600-1 then
+				if PosV < 37+6+23+600-1 then
 					PosV <= PosV+1;
 				else
 					PosV <= TO_UNSIGNED(0, 10);
 				end if;
 			end if;
 
-			if PosH >= 40 and PosH < 40+128 then
-				VgaH <= '0';
-			else
+			if PosH >= 56 and PosH < 56+120 then
 				VgaH <= '1';
-			end if;
-
-			if PosV >= 1 and PosV < 1+4 then
-				VgaV <= '0';
 			else
-				VgaV <= '1';
+				VgaH <= '0';
 			end if;
 
-			if (PosH >= 0 and PosH < 40+128+88) or (PosV >= 0 and PosV < 1+4+23) then
+			if PosV >= 37 and PosV < 37+6 then
+				VgaV <= '1';
+			else
+				VgaV <= '0';
+			end if;
+
+			if (PosH >= 0 and PosH < 56+120+64) or (PosV >= 0 and PosV < 37+6+23) then
 				VgaR <= '0'; VgaG <= '0'; VgaB <= '0';
-			elsif PosH >= 40+128+88+0 and PosH < 40+128+88+100 then
-				VgaR <= '0'; VgaG <= '0'; VgaB <= '0';
-			elsif PosH >= 40+128+88+100 and PosH < 40+128+88+200 then
+			elsif (PosH >= 56+120+64+0 and PosH < 56+120+64+10) or (PosH >= 56+120+64+790 and PosH < 56+120+64+800) 
+			   or (PosV >= 37+6+23+0 and PosV < 37+6+23+10) or (PosV >= 37+6+23+590 and PosV < 37+6+23+600) then
 				VgaR <= '0'; VgaG <= '0'; VgaB <= '1';
-			elsif PosH >= 40+128+88+200 and PosH < 40+128+88+300 then
+			elsif PosH >= 56+120+64+10 and PosH < 56+120+64+100 then
+				VgaR <= '0'; VgaG <= '0'; VgaB <= '0';
+			elsif PosH >= 56+120+64+100 and PosH < 56+120+64+200 then
+				VgaR <= '0'; VgaG <= '0'; VgaB <= '1';
+			elsif PosH >= 56+120+64+200 and PosH < 56+120+64+300 then
 				VgaR <= '0'; VgaG <= '1'; VgaB <= '0';
-			elsif PosH >= 40+128+88+300 and PosH < 40+128+88+400 then
+			elsif PosH >= 56+120+64+300 and PosH < 56+120+64+400 then
 				VgaR <= '0'; VgaG <= '1'; VgaB <= '1';
-			elsif PosH >= 40+128+88+400 and PosH < 40+128+88+500 then
+			elsif PosH >= 56+120+64+400 and PosH < 56+120+64+500 then
 				VgaR <= '1'; VgaG <= '0'; VgaB <= '0';
-			elsif PosH >= 40+128+88+500 and PosH < 40+128+88+600 then
+			elsif PosH >= 56+120+64+500 and PosH < 56+120+64+600 then
 				VgaR <= '1'; VgaG <= '0'; VgaB <= '1';
-			elsif PosH >= 40+128+88+600 and PosH < 40+128+88+700 then
+			elsif PosH >= 56+120+64+600 and PosH < 56+120+64+700 then
 				VgaR <= '1'; VgaG <= '1'; VgaB <= '0';
 			else
 				VgaR <= '1'; VgaG <= '1'; VgaB <= '1';
