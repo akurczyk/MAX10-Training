@@ -1,0 +1,218 @@
+|04-WS2812b
+WS2812b <= WS2812b_Driver:inst1.Bus_Output
+Clk => PLL:inst.inclk0
+
+
+|04-WS2812b|WS2812b_Driver:inst1
+Clk => BusyCnt[0].CLK
+Clk => BusyCnt[1].CLK
+Clk => BusyCnt[2].CLK
+Clk => BusyCnt[3].CLK
+Clk => BusyCnt[4].CLK
+Clk => BusyCnt[5].CLK
+Clk => BusyCnt[6].CLK
+Clk => BusyCnt[7].CLK
+Clk => BusyCnt[8].CLK
+Clk => BusyCnt[9].CLK
+Clk => Position[0].CLK
+Clk => Position[1].CLK
+Clk => Position[2].CLK
+Clk => Position[3].CLK
+Clk => Position[4].CLK
+Clk => Position[5].CLK
+Clk => State~1.DATAIN
+Start => Selector1.IN3
+Start => Selector0.IN1
+LED1_Red[0] => Mux0.IN31
+LED1_Red[1] => Mux0.IN30
+LED1_Red[2] => Mux0.IN29
+LED1_Red[3] => Mux0.IN28
+LED1_Red[4] => Mux0.IN27
+LED1_Red[5] => Mux0.IN26
+LED1_Red[6] => Mux0.IN25
+LED1_Red[7] => Mux0.IN24
+LED1_Green[0] => Mux0.IN23
+LED1_Green[1] => Mux0.IN22
+LED1_Green[2] => Mux0.IN21
+LED1_Green[3] => Mux0.IN20
+LED1_Green[4] => Mux0.IN19
+LED1_Green[5] => Mux0.IN18
+LED1_Green[6] => Mux0.IN17
+LED1_Green[7] => Mux0.IN16
+LED1_Blue[0] => Mux0.IN39
+LED1_Blue[1] => Mux0.IN38
+LED1_Blue[2] => Mux0.IN37
+LED1_Blue[3] => Mux0.IN36
+LED1_Blue[4] => Mux0.IN35
+LED1_Blue[5] => Mux0.IN34
+LED1_Blue[6] => Mux0.IN33
+LED1_Blue[7] => Mux0.IN32
+LED2_Red[0] => Mux0.IN55
+LED2_Red[1] => Mux0.IN54
+LED2_Red[2] => Mux0.IN53
+LED2_Red[3] => Mux0.IN52
+LED2_Red[4] => Mux0.IN51
+LED2_Red[5] => Mux0.IN50
+LED2_Red[6] => Mux0.IN49
+LED2_Red[7] => Mux0.IN48
+LED2_Green[0] => Mux0.IN47
+LED2_Green[1] => Mux0.IN46
+LED2_Green[2] => Mux0.IN45
+LED2_Green[3] => Mux0.IN44
+LED2_Green[4] => Mux0.IN43
+LED2_Green[5] => Mux0.IN42
+LED2_Green[6] => Mux0.IN41
+LED2_Green[7] => Mux0.IN40
+LED2_Blue[0] => Mux0.IN63
+LED2_Blue[1] => Mux0.IN62
+LED2_Blue[2] => Mux0.IN61
+LED2_Blue[3] => Mux0.IN60
+LED2_Blue[4] => Mux0.IN59
+LED2_Blue[5] => Mux0.IN58
+LED2_Blue[6] => Mux0.IN57
+LED2_Blue[7] => Mux0.IN56
+Bus_Output <= Bus_Output.DB_MAX_OUTPUT_PORT_TYPE
+Busy <= Busy.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|04-WS2812b|PLL:inst
+inclk0 => altpll:altpll_component.inclk[0]
+c0 <= altpll:altpll_component.clk[0]
+
+
+|04-WS2812b|PLL:inst|altpll:altpll_component
+inclk[0] => PLL_altpll:auto_generated.inclk[0]
+inclk[1] => PLL_altpll:auto_generated.inclk[1]
+fbin => ~NO_FANOUT~
+pllena => ~NO_FANOUT~
+clkswitch => ~NO_FANOUT~
+areset => ~NO_FANOUT~
+pfdena => ~NO_FANOUT~
+clkena[0] => ~NO_FANOUT~
+clkena[1] => ~NO_FANOUT~
+clkena[2] => ~NO_FANOUT~
+clkena[3] => ~NO_FANOUT~
+clkena[4] => ~NO_FANOUT~
+clkena[5] => ~NO_FANOUT~
+extclkena[0] => ~NO_FANOUT~
+extclkena[1] => ~NO_FANOUT~
+extclkena[2] => ~NO_FANOUT~
+extclkena[3] => ~NO_FANOUT~
+scanclk => ~NO_FANOUT~
+scanclkena => ~NO_FANOUT~
+scanaclr => ~NO_FANOUT~
+scanread => ~NO_FANOUT~
+scanwrite => ~NO_FANOUT~
+scandata => ~NO_FANOUT~
+phasecounterselect[0] => ~NO_FANOUT~
+phasecounterselect[1] => ~NO_FANOUT~
+phasecounterselect[2] => ~NO_FANOUT~
+phasecounterselect[3] => ~NO_FANOUT~
+phaseupdown => ~NO_FANOUT~
+phasestep => ~NO_FANOUT~
+configupdate => ~NO_FANOUT~
+fbmimicbidir <> <GND>
+clk[0] <= clk[0].DB_MAX_OUTPUT_PORT_TYPE
+clk[1] <= clk[1].DB_MAX_OUTPUT_PORT_TYPE
+clk[2] <= clk[2].DB_MAX_OUTPUT_PORT_TYPE
+clk[3] <= clk[3].DB_MAX_OUTPUT_PORT_TYPE
+clk[4] <= clk[4].DB_MAX_OUTPUT_PORT_TYPE
+extclk[0] <= <GND>
+extclk[1] <= <GND>
+extclk[2] <= <GND>
+extclk[3] <= <GND>
+clkbad[0] <= <GND>
+clkbad[1] <= <GND>
+enable1 <= <GND>
+enable0 <= <GND>
+activeclock <= <GND>
+clkloss <= <GND>
+locked <= <GND>
+scandataout <= <GND>
+scandone <= <GND>
+sclkout0 <= <GND>
+sclkout1 <= <GND>
+phasedone <= <GND>
+vcooverrange <= <GND>
+vcounderrange <= <GND>
+fbout <= <GND>
+fref <= <GND>
+icdrclk <= <GND>
+
+
+|04-WS2812b|PLL:inst|altpll:altpll_component|PLL_altpll:auto_generated
+clk[0] <= pll1.CLK
+clk[1] <= pll1.CLK1
+clk[2] <= pll1.CLK2
+clk[3] <= pll1.CLK3
+clk[4] <= pll1.CLK4
+inclk[0] => pll1.CLK
+inclk[1] => pll1.CLK1
+
+
+|04-WS2812b|all0:inst6
+Output[0] <= <GND>
+Output[1] <= <GND>
+Output[2] <= <GND>
+Output[3] <= <GND>
+Output[4] <= <GND>
+Output[5] <= <GND>
+Output[6] <= <GND>
+Output[7] <= <GND>
+
+
+|04-WS2812b|all0:inst5
+Output[0] <= <GND>
+Output[1] <= <GND>
+Output[2] <= <GND>
+Output[3] <= <GND>
+Output[4] <= <GND>
+Output[5] <= <GND>
+Output[6] <= <GND>
+Output[7] <= <GND>
+
+
+|04-WS2812b|all1:inst4
+Output[0] <= <VCC>
+Output[1] <= <VCC>
+Output[2] <= <VCC>
+Output[3] <= <VCC>
+Output[4] <= <VCC>
+Output[5] <= <VCC>
+Output[6] <= <VCC>
+Output[7] <= <VCC>
+
+
+|04-WS2812b|all1:inst9
+Output[0] <= <VCC>
+Output[1] <= <VCC>
+Output[2] <= <VCC>
+Output[3] <= <VCC>
+Output[4] <= <VCC>
+Output[5] <= <VCC>
+Output[6] <= <VCC>
+Output[7] <= <VCC>
+
+
+|04-WS2812b|all0:inst8
+Output[0] <= <GND>
+Output[1] <= <GND>
+Output[2] <= <GND>
+Output[3] <= <GND>
+Output[4] <= <GND>
+Output[5] <= <GND>
+Output[6] <= <GND>
+Output[7] <= <GND>
+
+
+|04-WS2812b|all0:inst7
+Output[0] <= <GND>
+Output[1] <= <GND>
+Output[2] <= <GND>
+Output[3] <= <GND>
+Output[4] <= <GND>
+Output[5] <= <GND>
+Output[6] <= <GND>
+Output[7] <= <GND>
+
+

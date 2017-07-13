@@ -1,0 +1,11 @@
+
+State Machine - |04-WS2812b|WS2812b_Driver:inst1|State
+Name State.S4 State.S3 State.O2 State.O1 State.Z2 State.Z1 State.S2 State.S1 
+State.S1 0 0 0 0 0 0 0 0 
+State.S2 0 0 0 0 0 0 1 1 
+State.Z1 0 0 0 0 0 1 0 1 
+State.Z2 0 0 0 0 1 0 0 1 
+State.O1 0 0 0 1 0 0 0 1 
+State.O2 0 0 1 0 0 0 0 1 
+State.S3 0 1 0 0 0 0 0 1 
+State.S4 1 0 0 0 0 0 0 1 

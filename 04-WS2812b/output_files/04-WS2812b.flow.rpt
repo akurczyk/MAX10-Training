@@ -1,0 +1,132 @@
+Flow report for 04-WS2812b
+Sat Jul 08 01:42:47 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sat Jul 08 01:42:43 2017       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                      ; 04-WS2812b                                  ;
+; Top-level Entity Name              ; 04-WS2812b                                  ;
+; Family                             ; MAX 10                                      ;
+; Device                             ; 10M08DAF256C8GES                            ;
+; Timing Models                      ; Preliminary                                 ;
+; Total logic elements               ; 32 / 8,064 ( < 1 % )                        ;
+;     Total combinational functions  ; 31 / 8,064 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 24 / 8,064 ( < 1 % )                        ;
+; Total registers                    ; 24                                          ;
+; Total pins                         ; 2 / 178 ( 1 % )                             ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 387,072 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 48 ( 0 % )                              ;
+; Total PLLs                         ; 1 / 2 ( 50 % )                              ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
+; ADC blocks                         ; 0 / 1 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 07/08/2017 01:42:16 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; 04-WS2812b          ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 88491853464190.149947093608912         ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; None                                   ; --            ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; PLL.bsf                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; PLL.cmp                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; PLL.ppf                                ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --             ;
++-------------------------------------+----------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 686 MB              ; 00:00:37                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 1161 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 558 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 638 MB              ; 00:00:03                           ;
+; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:47                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; OLO-THINKPAD     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; OLO-THINKPAD     ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; OLO-THINKPAD     ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; OLO-THINKPAD     ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off 04-WS2812b -c 04-WS2812b
+quartus_fit --read_settings_files=off --write_settings_files=off 04-WS2812b -c 04-WS2812b
+quartus_asm --read_settings_files=off --write_settings_files=off 04-WS2812b -c 04-WS2812b
+quartus_sta 04-WS2812b -c 04-WS2812b
+
+
+
